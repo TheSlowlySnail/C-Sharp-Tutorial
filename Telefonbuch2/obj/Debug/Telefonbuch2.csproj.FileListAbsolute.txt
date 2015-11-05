@@ -1,0 +1,9 @@
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\bin\Debug\Telefonbuch2.exe.config
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\bin\Debug\Telefonbuch2.exe
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\bin\Debug\Telefonbuch2.pdb
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.csprojResolveAssemblyReference.cache
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.frmMain.resources
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.Properties.Resources.resources
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.csproj.GenerateResource.Cache
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.exe
+c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.pdb
