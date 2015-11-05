@@ -12,64 +12,66 @@ namespace Telefonbuch2
 {
     public partial class frmMain : Form
     {
-        string sVname;
-        string sName;
-        string sNbr;
+
 
         public frmMain()
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+         
 
         private void btSave_Click(object sender, EventArgs e)
         {
-            saveText();
+            
+            this.rtbEntries.Text += saveText("Save BUtton");
 
         }
-
-        private void btOne_Click(object sender, EventArgs e)
+        private void btDel_Click(object sender, EventArgs e)
         {
-            saveText();
+            if (this.cbAll.Checked)
+            {
+                DialogResult dr = MessageBox.Show("Wirklich löschen", "Löschen", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                if (dr == DialogResult.Yes)
+                {
+                    deleteAll();
+                }
+               
+                
+            }
+            else
+            {
+                deleteFields();
+            }
         }
+  
 
-        private void btTwo_Click(object sender, EventArgs e)
+        
+
+        public string saveText(string sBt)
         {
-            saveText();
+
+            return "Gedrückt wurde " + sBt + "\nVorname:\t\t\t " + this.tbVname.Text + "\nNachname:\t\t " + this.tbName.Text + "\nTelefonnummer:\t " + this.tbNbr.Text + "\n\n";
         }
 
-        private void btThree_Click(object sender, EventArgs e)
+        public void deleteFields()
         {
-            saveText();
+            this.tbName.Text = "";
+            this.tbVname.Text = "";
+            this.tbNbr.Text = "";
+            
+
         }
 
-        private void btFour_Click(object sender, EventArgs e)
+        public void deleteAll()
         {
-            saveText();
+            
+            deleteFields();
+            this.rtbEntries.Text = "";
         }
+        
 
-        public void saveText()
-        {
-            sVname = this.tbVname.Text;
-            sName = this.tbName.Text;
-            sNbr = this.tbNbr.Text;
 
-            string sEntries = "Vorname:\t\t\t " + sVname + "\nNachname:\t\t " + sName + "\nTelefonnummer:\t " + sNbr + "\n\n";
-            this.rtbEntries.Text += sEntries;
-        }
+
+       
     }
 }

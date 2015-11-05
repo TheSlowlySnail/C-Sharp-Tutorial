@@ -37,10 +37,7 @@
             this.btSave = new System.Windows.Forms.Button();
             this.btDel = new System.Windows.Forms.Button();
             this.rtbEntries = new System.Windows.Forms.RichTextBox();
-            this.btOne = new System.Windows.Forms.Button();
-            this.btTwo = new System.Windows.Forms.Button();
-            this.btThree = new System.Windows.Forms.Button();
-            this.btFour = new System.Windows.Forms.Button();
+            this.cbAll = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbVname
@@ -52,7 +49,6 @@
             this.lbVname.Size = new System.Drawing.Size(120, 25);
             this.lbVname.TabIndex = 0;
             this.lbVname.Text = "Vorname:";
-            this.lbVname.Click += new System.EventHandler(this.label1_Click);
             // 
             // tbVname
             // 
@@ -83,7 +79,6 @@
             this.tbNbr.Name = "tbNbr";
             this.tbNbr.Size = new System.Drawing.Size(251, 32);
             this.tbNbr.TabIndex = 5;
-            this.tbNbr.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbNbr
             // 
@@ -93,7 +88,6 @@
             this.lbNbr.Size = new System.Drawing.Size(196, 25);
             this.lbNbr.TabIndex = 4;
             this.lbNbr.Text = "Telefonnummer:";
-            this.lbNbr.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btSave
             // 
@@ -109,71 +103,39 @@
             // btDel
             // 
             this.btDel.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDel.Location = new System.Drawing.Point(367, 221);
+            this.btDel.Location = new System.Drawing.Point(166, 221);
             this.btDel.Name = "btDel";
             this.btDel.Size = new System.Drawing.Size(115, 38);
             this.btDel.TabIndex = 7;
             this.btDel.Text = "Löschen";
             this.btDel.UseVisualStyleBackColor = true;
+            this.btDel.Click += new System.EventHandler(this.btDel_Click);
             // 
             // rtbEntries
             // 
             this.rtbEntries.Location = new System.Drawing.Point(36, 280);
             this.rtbEntries.Name = "rtbEntries";
-            this.rtbEntries.Size = new System.Drawing.Size(446, 103);
+            this.rtbEntries.Size = new System.Drawing.Size(446, 253);
             this.rtbEntries.TabIndex = 8;
             this.rtbEntries.Text = "";
             // 
-            // btOne
+            // cbAll
             // 
-            this.btOne.Location = new System.Drawing.Point(167, 222);
-            this.btOne.Name = "btOne";
-            this.btOne.Size = new System.Drawing.Size(44, 37);
-            this.btOne.TabIndex = 9;
-            this.btOne.Text = "1";
-            this.btOne.UseVisualStyleBackColor = true;
-            this.btOne.Click += new System.EventHandler(this.btOne_Click);
-            // 
-            // btTwo
-            // 
-            this.btTwo.Location = new System.Drawing.Point(217, 221);
-            this.btTwo.Name = "btTwo";
-            this.btTwo.Size = new System.Drawing.Size(44, 37);
-            this.btTwo.TabIndex = 10;
-            this.btTwo.Text = "2";
-            this.btTwo.UseVisualStyleBackColor = true;
-            this.btTwo.Click += new System.EventHandler(this.btTwo_Click);
-            // 
-            // btThree
-            // 
-            this.btThree.Location = new System.Drawing.Point(267, 220);
-            this.btThree.Name = "btThree";
-            this.btThree.Size = new System.Drawing.Size(44, 37);
-            this.btThree.TabIndex = 11;
-            this.btThree.Text = "3";
-            this.btThree.UseVisualStyleBackColor = true;
-            this.btThree.Click += new System.EventHandler(this.btThree_Click);
-            // 
-            // btFour
-            // 
-            this.btFour.Location = new System.Drawing.Point(317, 222);
-            this.btFour.Name = "btFour";
-            this.btFour.Size = new System.Drawing.Size(44, 37);
-            this.btFour.TabIndex = 12;
-            this.btFour.Text = "4";
-            this.btFour.UseVisualStyleBackColor = true;
-            this.btFour.Click += new System.EventHandler(this.btFour_Click);
+            this.cbAll.AutoSize = true;
+            this.cbAll.Location = new System.Drawing.Point(327, 221);
+            this.cbAll.Name = "cbAll";
+            this.cbAll.Size = new System.Drawing.Size(101, 29);
+            this.cbAll.TabIndex = 9;
+            this.cbAll.Text = "Alles?";
+            this.cbAll.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(494, 395);
-            this.Controls.Add(this.btFour);
-            this.Controls.Add(this.btThree);
-            this.Controls.Add(this.btTwo);
-            this.Controls.Add(this.btOne);
+            this.ClientSize = new System.Drawing.Size(494, 567);
+            this.Controls.Add(this.cbAll);
             this.Controls.Add(this.rtbEntries);
             this.Controls.Add(this.btDel);
             this.Controls.Add(this.btSave);
@@ -185,7 +147,7 @@
             this.Controls.Add(this.lbVname);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
@@ -207,10 +169,7 @@
         private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btDel;
         private System.Windows.Forms.RichTextBox rtbEntries;
-        private System.Windows.Forms.Button btOne;
-        private System.Windows.Forms.Button btTwo;
-        private System.Windows.Forms.Button btThree;
-        private System.Windows.Forms.Button btFour;
+        private System.Windows.Forms.CheckBox cbAll;
     }
 }
 
