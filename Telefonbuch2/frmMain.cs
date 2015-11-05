@@ -12,6 +12,10 @@ namespace Telefonbuch2
 {
     public partial class frmMain : Form
     {
+        string sVname;
+        string sName;
+        string sNbr;
+
         public frmMain()
         {
             InitializeComponent();
@@ -29,6 +33,17 @@ namespace Telefonbuch2
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            sVname = this.tbVname.Text;
+            sName = this.tbName.Text;
+            sNbr = this.tbNbr.Text;
+
+            string sEntries = "Vorname:\t\t\t " + sVname + "\nNachname:\t\t " + sName + "\nTelefonnummer:\t " + sNbr;
+            this.rtbEntries.Text = sEntries;
 
         }
     }

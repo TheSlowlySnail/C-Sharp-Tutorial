@@ -36,7 +36,7 @@
             this.lbNbr = new System.Windows.Forms.Label();
             this.btSave = new System.Windows.Forms.Button();
             this.btDel = new System.Windows.Forms.Button();
-            this.tbEntry = new System.Windows.Forms.TextBox();
+            this.rtbEntries = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // lbVname
@@ -99,6 +99,7 @@
             this.btSave.TabIndex = 6;
             this.btSave.Text = "Speichern";
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btDel
             // 
@@ -110,13 +111,13 @@
             this.btDel.Text = "Löschen";
             this.btDel.UseVisualStyleBackColor = true;
             // 
-            // tbEntry
+            // rtbEntries
             // 
-            this.tbEntry.Location = new System.Drawing.Point(36, 284);
-            this.tbEntry.Multiline = true;
-            this.tbEntry.Name = "tbEntry";
-            this.tbEntry.Size = new System.Drawing.Size(446, 99);
-            this.tbEntry.TabIndex = 8;
+            this.rtbEntries.Location = new System.Drawing.Point(36, 280);
+            this.rtbEntries.Name = "rtbEntries";
+            this.rtbEntries.Size = new System.Drawing.Size(446, 103);
+            this.rtbEntries.TabIndex = 8;
+            this.rtbEntries.Text = "";
             // 
             // frmMain
             // 
@@ -124,7 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(494, 395);
-            this.Controls.Add(this.tbEntry);
+            this.Controls.Add(this.rtbEntries);
             this.Controls.Add(this.btDel);
             this.Controls.Add(this.btSave);
             this.Controls.Add(this.tbNbr);
@@ -156,7 +157,7 @@
         private System.Windows.Forms.Label lbNbr;
         private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btDel;
-        private System.Windows.Forms.TextBox tbEntry;
+        private System.Windows.Forms.RichTextBox rtbEntries;
     }
 }
 
