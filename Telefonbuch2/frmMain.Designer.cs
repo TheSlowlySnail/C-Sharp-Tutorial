@@ -37,11 +37,16 @@
             this.btSave = new System.Windows.Forms.Button();
             this.btDel = new System.Windows.Forms.Button();
             this.rtbEntries = new System.Windows.Forms.RichTextBox();
+            this.btOne = new System.Windows.Forms.Button();
+            this.btTwo = new System.Windows.Forms.Button();
+            this.btThree = new System.Windows.Forms.Button();
+            this.btFour = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbVname
             // 
             this.lbVname.AutoSize = true;
+            this.lbVname.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.lbVname.Location = new System.Drawing.Point(31, 44);
             this.lbVname.Name = "lbVname";
             this.lbVname.Size = new System.Drawing.Size(120, 25);
@@ -104,7 +109,7 @@
             // btDel
             // 
             this.btDel.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDel.Location = new System.Drawing.Point(169, 221);
+            this.btDel.Location = new System.Drawing.Point(367, 221);
             this.btDel.Name = "btDel";
             this.btDel.Size = new System.Drawing.Size(115, 38);
             this.btDel.TabIndex = 7;
@@ -119,12 +124,56 @@
             this.rtbEntries.TabIndex = 8;
             this.rtbEntries.Text = "";
             // 
+            // btOne
+            // 
+            this.btOne.Location = new System.Drawing.Point(167, 222);
+            this.btOne.Name = "btOne";
+            this.btOne.Size = new System.Drawing.Size(44, 37);
+            this.btOne.TabIndex = 9;
+            this.btOne.Text = "1";
+            this.btOne.UseVisualStyleBackColor = true;
+            this.btOne.Click += new System.EventHandler(this.btOne_Click);
+            // 
+            // btTwo
+            // 
+            this.btTwo.Location = new System.Drawing.Point(217, 221);
+            this.btTwo.Name = "btTwo";
+            this.btTwo.Size = new System.Drawing.Size(44, 37);
+            this.btTwo.TabIndex = 10;
+            this.btTwo.Text = "2";
+            this.btTwo.UseVisualStyleBackColor = true;
+            this.btTwo.Click += new System.EventHandler(this.btTwo_Click);
+            // 
+            // btThree
+            // 
+            this.btThree.Location = new System.Drawing.Point(267, 220);
+            this.btThree.Name = "btThree";
+            this.btThree.Size = new System.Drawing.Size(44, 37);
+            this.btThree.TabIndex = 11;
+            this.btThree.Text = "3";
+            this.btThree.UseVisualStyleBackColor = true;
+            this.btThree.Click += new System.EventHandler(this.btThree_Click);
+            // 
+            // btFour
+            // 
+            this.btFour.Location = new System.Drawing.Point(317, 222);
+            this.btFour.Name = "btFour";
+            this.btFour.Size = new System.Drawing.Size(44, 37);
+            this.btFour.TabIndex = 12;
+            this.btFour.Text = "4";
+            this.btFour.UseVisualStyleBackColor = true;
+            this.btFour.Click += new System.EventHandler(this.btFour_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(494, 395);
+            this.Controls.Add(this.btFour);
+            this.Controls.Add(this.btThree);
+            this.Controls.Add(this.btTwo);
+            this.Controls.Add(this.btOne);
             this.Controls.Add(this.rtbEntries);
             this.Controls.Add(this.btDel);
             this.Controls.Add(this.btSave);
@@ -158,6 +207,10 @@
         private System.Windows.Forms.Button btSave;
         private System.Windows.Forms.Button btDel;
         private System.Windows.Forms.RichTextBox rtbEntries;
+        private System.Windows.Forms.Button btOne;
+        private System.Windows.Forms.Button btTwo;
+        private System.Windows.Forms.Button btThree;
+        private System.Windows.Forms.Button btFour;
     }
 }
 
