@@ -42,8 +42,8 @@ namespace Telefonbuch2
             sName = this.tbName.Text;
             sNbr = this.tbNbr.Text;
 
-            string sEntries = "Vorname:\t\t\t " + sVname + "\nNachname:\t\t " + sName + "\nTelefonnummer:\t " + sNbr;
-            this.rtbEntries.Text = sEntries;
+            string sEntries = "Vorname:\t\t\t " + sVname + "\nNachname:\t\t " + sName + "\nTelefonnummer:\t " + sNbr + "\n\n";
+            this.rtbEntries.Text += sEntries;
 
         }
     }
