@@ -19,45 +19,28 @@ namespace Telefonbuch2
             InitializeComponent();
         }
 
+        private void maskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void frmMain_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btNew_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btOpen_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btPreview_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
 
     }

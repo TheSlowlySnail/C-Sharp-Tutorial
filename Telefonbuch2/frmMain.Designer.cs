@@ -36,33 +36,80 @@
             this.btPreview = new System.Windows.Forms.Button();
             this.btSave = new System.Windows.Forms.Button();
             this.ttButtons = new System.Windows.Forms.ToolTip(this.components);
+            this.btPic = new System.Windows.Forms.Button();
             this.tabContactInfo = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
+            this.lbPic = new System.Windows.Forms.Label();
+            this.picbContact = new System.Windows.Forms.PictureBox();
+            this.gbShowAs = new System.Windows.Forms.GroupBox();
+            this.combobShowAs = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gbGender = new System.Windows.Forms.GroupBox();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.tbTitle = new System.Windows.Forms.TextBox();
+            this.tbNickname = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbNickname = new System.Windows.Forms.Label();
+            this.tbVname = new System.Windows.Forms.TextBox();
+            this.lbVname = new System.Windows.Forms.Label();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.lbName = new System.Windows.Forms.Label();
             this.tabNumbers = new System.Windows.Forms.TabPage();
+            this.tbNbrVw4 = new System.Windows.Forms.TextBox();
+            this.tbNbrVw2 = new System.Windows.Forms.TextBox();
+            this.tbNbrVw3 = new System.Windows.Forms.TextBox();
+            this.tbNbrVw1 = new System.Windows.Forms.TextBox();
+            this.lbNbr4 = new System.Windows.Forms.Label();
+            this.lbNbr3 = new System.Windows.Forms.Label();
+            this.lbNbr2 = new System.Windows.Forms.Label();
+            this.lbNbr1 = new System.Windows.Forms.Label();
             this.tabAdress = new System.Windows.Forms.TabPage();
             this.tabOther = new System.Windows.Forms.TabPage();
-            this.lbName = new System.Windows.Forms.Label();
-            this.tbName = new System.Windows.Forms.TextBox();
-            this.lbVname = new System.Windows.Forms.Label();
-            this.tbVname = new System.Windows.Forms.TextBox();
-            this.lbNickname = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbNickname = new System.Windows.Forms.TextBox();
-            this.tbTitle = new System.Windows.Forms.TextBox();
-            this.gbGender = new System.Windows.Forms.GroupBox();
-            this.rbMale = new System.Windows.Forms.RadioButton();
-            this.rbFemale = new System.Windows.Forms.RadioButton();
-            this.gbShowAs = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.combobShowAs = new System.Windows.Forms.ComboBox();
-            this.picbContact = new System.Windows.Forms.PictureBox();
-            this.lbPic = new System.Windows.Forms.Label();
-            this.btPic = new System.Windows.Forms.Button();
+            this.tbNr4 = new System.Windows.Forms.TextBox();
+            this.tbNr2 = new System.Windows.Forms.TextBox();
+            this.tbNr3 = new System.Windows.Forms.TextBox();
+            this.tbNr1 = new System.Windows.Forms.TextBox();
+            this.lbSlash = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.combobNr1 = new System.Windows.Forms.ComboBox();
+            this.combobNr2 = new System.Windows.Forms.ComboBox();
+            this.combobNr3 = new System.Windows.Forms.ComboBox();
+            this.combobNr4 = new System.Windows.Forms.ComboBox();
+            this.maskBCC1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskBCC2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskBCC3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskBCC4 = new System.Windows.Forms.MaskedTextBox();
+            this.lbStreet = new System.Windows.Forms.Label();
+            this.lbZip = new System.Windows.Forms.Label();
+            this.lbCountry = new System.Windows.Forms.Label();
+            this.lbTown = new System.Windows.Forms.Label();
+            this.lbHNr = new System.Windows.Forms.Label();
+            this.tbStreet = new System.Windows.Forms.TextBox();
+            this.tbZIP = new System.Windows.Forms.TextBox();
+            this.tbCountry = new System.Windows.Forms.TextBox();
+            this.tbHNr = new System.Windows.Forms.TextBox();
+            this.tbTown = new System.Windows.Forms.TextBox();
+            this.groubBMail = new System.Windows.Forms.GroupBox();
+            this.lbMail1 = new System.Windows.Forms.Label();
+            this.lbMail2 = new System.Windows.Forms.Label();
+            this.tbMail1 = new System.Windows.Forms.TextBox();
+            this.tbMail2 = new System.Windows.Forms.TextBox();
+            this.comboBMail1 = new System.Windows.Forms.ComboBox();
+            this.comboBMail2 = new System.Windows.Forms.ComboBox();
+            this.rtbOther = new System.Windows.Forms.RichTextBox();
+            this.lbOther = new System.Windows.Forms.Label();
             this.tabContactInfo.SuspendLayout();
             this.tabGeneral.SuspendLayout();
-            this.gbGender.SuspendLayout();
-            this.gbShowAs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbContact)).BeginInit();
+            this.gbShowAs.SuspendLayout();
+            this.gbGender.SuspendLayout();
+            this.tabNumbers.SuspendLayout();
+            this.tabAdress.SuspendLayout();
+            this.tabOther.SuspendLayout();
+            this.groubBMail.SuspendLayout();
             this.SuspendLayout();
             // 
             // btNew
@@ -75,7 +122,6 @@
             this.btNew.TabIndex = 0;
             this.ttButtons.SetToolTip(this.btNew, "Neuer Kontakt");
             this.btNew.UseVisualStyleBackColor = true;
-            this.btNew.Click += new System.EventHandler(this.btNew_Click);
             // 
             // ilbuttons
             // 
@@ -97,7 +143,6 @@
             this.btOpen.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ttButtons.SetToolTip(this.btOpen, "Öffnen");
             this.btOpen.UseVisualStyleBackColor = true;
-            this.btOpen.Click += new System.EventHandler(this.btOpen_Click);
             // 
             // btPreview
             // 
@@ -109,7 +154,6 @@
             this.btPreview.TabIndex = 2;
             this.ttButtons.SetToolTip(this.btPreview, "Vorschau");
             this.btPreview.UseVisualStyleBackColor = true;
-            this.btPreview.Click += new System.EventHandler(this.btPreview_Click);
             // 
             // btSave
             // 
@@ -121,13 +165,21 @@
             this.btSave.TabIndex = 3;
             this.ttButtons.SetToolTip(this.btSave, "Speichern");
             this.btSave.UseVisualStyleBackColor = true;
-            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // ttButtons
             // 
             this.ttButtons.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttButtons.ToolTipTitle = "Information";
-            this.ttButtons.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
+            // 
+            // btPic
+            // 
+            this.btPic.Location = new System.Drawing.Point(754, 267);
+            this.btPic.Name = "btPic";
+            this.btPic.Size = new System.Drawing.Size(47, 40);
+            this.btPic.TabIndex = 12;
+            this.btPic.Text = "...";
+            this.ttButtons.SetToolTip(this.btPic, "Bild laden");
+            this.btPic.UseVisualStyleBackColor = true;
             // 
             // tabContactInfo
             // 
@@ -164,133 +216,24 @@
             this.tabGeneral.TabIndex = 0;
             this.tabGeneral.Text = "Allgemeines";
             // 
-            // tabNumbers
+            // lbPic
             // 
-            this.tabNumbers.BackColor = System.Drawing.Color.LightCoral;
-            this.tabNumbers.Location = new System.Drawing.Point(4, 34);
-            this.tabNumbers.Name = "tabNumbers";
-            this.tabNumbers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNumbers.Size = new System.Drawing.Size(843, 436);
-            this.tabNumbers.TabIndex = 1;
-            this.tabNumbers.Text = "Telefonnummern";
+            this.lbPic.AutoSize = true;
+            this.lbPic.Location = new System.Drawing.Point(616, 264);
+            this.lbPic.Name = "lbPic";
+            this.lbPic.Size = new System.Drawing.Size(63, 25);
+            this.lbPic.TabIndex = 11;
+            this.lbPic.Text = "Bild:";
             // 
-            // tabAdress
+            // picbContact
             // 
-            this.tabAdress.Location = new System.Drawing.Point(4, 34);
-            this.tabAdress.Name = "tabAdress";
-            this.tabAdress.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAdress.Size = new System.Drawing.Size(843, 436);
-            this.tabAdress.TabIndex = 2;
-            this.tabAdress.Text = "Adresse";
-            this.tabAdress.UseVisualStyleBackColor = true;
-            // 
-            // tabOther
-            // 
-            this.tabOther.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.tabOther.Location = new System.Drawing.Point(4, 34);
-            this.tabOther.Name = "tabOther";
-            this.tabOther.Padding = new System.Windows.Forms.Padding(3);
-            this.tabOther.Size = new System.Drawing.Size(843, 436);
-            this.tabOther.TabIndex = 3;
-            this.tabOther.Text = "Sonstiges";
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(18, 8);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(76, 25);
-            this.lbName.TabIndex = 0;
-            this.lbName.Text = "Name";
-            // 
-            // tbName
-            // 
-            this.tbName.Location = new System.Drawing.Point(183, 8);
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(288, 32);
-            this.tbName.TabIndex = 1;
-            // 
-            // lbVname
-            // 
-            this.lbVname.AutoSize = true;
-            this.lbVname.Location = new System.Drawing.Point(18, 54);
-            this.lbVname.Name = "lbVname";
-            this.lbVname.Size = new System.Drawing.Size(112, 25);
-            this.lbVname.TabIndex = 2;
-            this.lbVname.Text = "Vorname";
-            // 
-            // tbVname
-            // 
-            this.tbVname.Location = new System.Drawing.Point(183, 54);
-            this.tbVname.Name = "tbVname";
-            this.tbVname.Size = new System.Drawing.Size(288, 32);
-            this.tbVname.TabIndex = 3;
-            // 
-            // lbNickname
-            // 
-            this.lbNickname.AutoSize = true;
-            this.lbNickname.Location = new System.Drawing.Point(18, 100);
-            this.lbNickname.Name = "lbNickname";
-            this.lbNickname.Size = new System.Drawing.Size(129, 25);
-            this.lbNickname.TabIndex = 4;
-            this.lbNickname.Text = "Spitzname";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 153);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Tetel";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // tbNickname
-            // 
-            this.tbNickname.Location = new System.Drawing.Point(183, 100);
-            this.tbNickname.Name = "tbNickname";
-            this.tbNickname.Size = new System.Drawing.Size(288, 32);
-            this.tbNickname.TabIndex = 6;
-            // 
-            // tbTitle
-            // 
-            this.tbTitle.Location = new System.Drawing.Point(183, 146);
-            this.tbTitle.Name = "tbTitle";
-            this.tbTitle.Size = new System.Drawing.Size(288, 32);
-            this.tbTitle.TabIndex = 7;
-            // 
-            // gbGender
-            // 
-            this.gbGender.Controls.Add(this.rbFemale);
-            this.gbGender.Controls.Add(this.rbMale);
-            this.gbGender.Location = new System.Drawing.Point(17, 264);
-            this.gbGender.Name = "gbGender";
-            this.gbGender.Size = new System.Drawing.Size(454, 100);
-            this.gbGender.TabIndex = 8;
-            this.gbGender.TabStop = false;
-            this.gbGender.Text = "Geschlecht";
-            // 
-            // rbMale
-            // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Checked = true;
-            this.rbMale.Location = new System.Drawing.Point(6, 46);
-            this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(135, 29);
-            this.rbMale.TabIndex = 0;
-            this.rbMale.TabStop = true;
-            this.rbMale.Text = "männlich";
-            this.rbMale.UseVisualStyleBackColor = true;
-            // 
-            // rbFemale
-            // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(225, 46);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(127, 29);
-            this.rbFemale.TabIndex = 1;
-            this.rbFemale.Text = "weiblich";
-            this.rbFemale.UseVisualStyleBackColor = true;
+            this.picbContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picbContact.Location = new System.Drawing.Point(616, 8);
+            this.picbContact.Name = "picbContact";
+            this.picbContact.Size = new System.Drawing.Size(186, 253);
+            this.picbContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picbContact.TabIndex = 10;
+            this.picbContact.TabStop = false;
             // 
             // gbShowAs
             // 
@@ -302,16 +245,6 @@
             this.gbShowAs.TabIndex = 9;
             this.gbShowAs.TabStop = false;
             this.gbShowAs.Text = "Anzeigen als";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Beispiel";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // combobShowAs
             // 
@@ -327,41 +260,568 @@
             this.combobShowAs.Size = new System.Drawing.Size(442, 33);
             this.combobShowAs.TabIndex = 1;
             // 
-            // picbContact
+            // label1
             // 
-            this.picbContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picbContact.Location = new System.Drawing.Point(616, 8);
-            this.picbContact.Name = "picbContact";
-            this.picbContact.Size = new System.Drawing.Size(186, 253);
-            this.picbContact.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picbContact.TabIndex = 10;
-            this.picbContact.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Beispiel";
             // 
-            // lbPic
+            // gbGender
             // 
-            this.lbPic.AutoSize = true;
-            this.lbPic.Location = new System.Drawing.Point(616, 264);
-            this.lbPic.Name = "lbPic";
-            this.lbPic.Size = new System.Drawing.Size(63, 25);
-            this.lbPic.TabIndex = 11;
-            this.lbPic.Text = "Bild:";
+            this.gbGender.Controls.Add(this.rbFemale);
+            this.gbGender.Controls.Add(this.rbMale);
+            this.gbGender.Location = new System.Drawing.Point(17, 264);
+            this.gbGender.Name = "gbGender";
+            this.gbGender.Size = new System.Drawing.Size(454, 100);
+            this.gbGender.TabIndex = 8;
+            this.gbGender.TabStop = false;
+            this.gbGender.Text = "Geschlecht";
             // 
-            // btPic
+            // rbFemale
             // 
-            this.btPic.Location = new System.Drawing.Point(754, 267);
-            this.btPic.Name = "btPic";
-            this.btPic.Size = new System.Drawing.Size(47, 40);
-            this.btPic.TabIndex = 12;
-            this.btPic.Text = "...";
-            this.ttButtons.SetToolTip(this.btPic, "Bild laden");
-            this.btPic.UseVisualStyleBackColor = true;
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Location = new System.Drawing.Point(225, 46);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(127, 29);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.Text = "weiblich";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.Checked = true;
+            this.rbMale.Location = new System.Drawing.Point(6, 46);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(135, 29);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "männlich";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // tbTitle
+            // 
+            this.tbTitle.Location = new System.Drawing.Point(183, 146);
+            this.tbTitle.Name = "tbTitle";
+            this.tbTitle.Size = new System.Drawing.Size(288, 32);
+            this.tbTitle.TabIndex = 7;
+            // 
+            // tbNickname
+            // 
+            this.tbNickname.Location = new System.Drawing.Point(183, 100);
+            this.tbNickname.Name = "tbNickname";
+            this.tbNickname.Size = new System.Drawing.Size(288, 32);
+            this.tbNickname.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 153);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Tetel";
+            // 
+            // lbNickname
+            // 
+            this.lbNickname.AutoSize = true;
+            this.lbNickname.Location = new System.Drawing.Point(18, 100);
+            this.lbNickname.Name = "lbNickname";
+            this.lbNickname.Size = new System.Drawing.Size(129, 25);
+            this.lbNickname.TabIndex = 4;
+            this.lbNickname.Text = "Spitzname";
+            // 
+            // tbVname
+            // 
+            this.tbVname.Location = new System.Drawing.Point(183, 54);
+            this.tbVname.Name = "tbVname";
+            this.tbVname.Size = new System.Drawing.Size(288, 32);
+            this.tbVname.TabIndex = 3;
+            // 
+            // lbVname
+            // 
+            this.lbVname.AutoSize = true;
+            this.lbVname.Location = new System.Drawing.Point(18, 54);
+            this.lbVname.Name = "lbVname";
+            this.lbVname.Size = new System.Drawing.Size(112, 25);
+            this.lbVname.TabIndex = 2;
+            this.lbVname.Text = "Vorname";
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(183, 8);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(288, 32);
+            this.tbName.TabIndex = 1;
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Location = new System.Drawing.Point(18, 8);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(76, 25);
+            this.lbName.TabIndex = 0;
+            this.lbName.Text = "Name";
+            // 
+            // tabNumbers
+            // 
+            this.tabNumbers.BackColor = System.Drawing.Color.LightCoral;
+            this.tabNumbers.Controls.Add(this.maskBCC4);
+            this.tabNumbers.Controls.Add(this.maskBCC3);
+            this.tabNumbers.Controls.Add(this.maskBCC2);
+            this.tabNumbers.Controls.Add(this.maskBCC1);
+            this.tabNumbers.Controls.Add(this.combobNr4);
+            this.tabNumbers.Controls.Add(this.combobNr3);
+            this.tabNumbers.Controls.Add(this.combobNr2);
+            this.tabNumbers.Controls.Add(this.combobNr1);
+            this.tabNumbers.Controls.Add(this.label5);
+            this.tabNumbers.Controls.Add(this.label4);
+            this.tabNumbers.Controls.Add(this.label3);
+            this.tabNumbers.Controls.Add(this.lbSlash);
+            this.tabNumbers.Controls.Add(this.tbNr4);
+            this.tabNumbers.Controls.Add(this.tbNr2);
+            this.tabNumbers.Controls.Add(this.tbNr3);
+            this.tabNumbers.Controls.Add(this.tbNr1);
+            this.tabNumbers.Controls.Add(this.tbNbrVw4);
+            this.tabNumbers.Controls.Add(this.tbNbrVw2);
+            this.tabNumbers.Controls.Add(this.tbNbrVw3);
+            this.tabNumbers.Controls.Add(this.tbNbrVw1);
+            this.tabNumbers.Controls.Add(this.lbNbr4);
+            this.tabNumbers.Controls.Add(this.lbNbr3);
+            this.tabNumbers.Controls.Add(this.lbNbr2);
+            this.tabNumbers.Controls.Add(this.lbNbr1);
+            this.tabNumbers.Location = new System.Drawing.Point(4, 34);
+            this.tabNumbers.Name = "tabNumbers";
+            this.tabNumbers.Padding = new System.Windows.Forms.Padding(3);
+            this.tabNumbers.Size = new System.Drawing.Size(843, 722);
+            this.tabNumbers.TabIndex = 1;
+            this.tabNumbers.Text = "Telefonnummern";
+            // 
+            // tbNbrVw4
+            // 
+            this.tbNbrVw4.Location = new System.Drawing.Point(176, 276);
+            this.tbNbrVw4.Name = "tbNbrVw4";
+            this.tbNbrVw4.Size = new System.Drawing.Size(100, 32);
+            this.tbNbrVw4.TabIndex = 7;
+            // 
+            // tbNbrVw2
+            // 
+            this.tbNbrVw2.Location = new System.Drawing.Point(176, 136);
+            this.tbNbrVw2.Name = "tbNbrVw2";
+            this.tbNbrVw2.Size = new System.Drawing.Size(100, 32);
+            this.tbNbrVw2.TabIndex = 6;
+            // 
+            // tbNbrVw3
+            // 
+            this.tbNbrVw3.Location = new System.Drawing.Point(176, 206);
+            this.tbNbrVw3.Name = "tbNbrVw3";
+            this.tbNbrVw3.Size = new System.Drawing.Size(100, 32);
+            this.tbNbrVw3.TabIndex = 5;
+            // 
+            // tbNbrVw1
+            // 
+            this.tbNbrVw1.Location = new System.Drawing.Point(176, 66);
+            this.tbNbrVw1.Name = "tbNbrVw1";
+            this.tbNbrVw1.Size = new System.Drawing.Size(100, 32);
+            this.tbNbrVw1.TabIndex = 4;
+            // 
+            // lbNbr4
+            // 
+            this.lbNbr4.AutoSize = true;
+            this.lbNbr4.Location = new System.Drawing.Point(20, 276);
+            this.lbNbr4.Name = "lbNbr4";
+            this.lbNbr4.Size = new System.Drawing.Size(43, 25);
+            this.lbNbr4.TabIndex = 3;
+            this.lbNbr4.Text = "#4";
+            // 
+            // lbNbr3
+            // 
+            this.lbNbr3.AutoSize = true;
+            this.lbNbr3.Location = new System.Drawing.Point(20, 206);
+            this.lbNbr3.Name = "lbNbr3";
+            this.lbNbr3.Size = new System.Drawing.Size(43, 25);
+            this.lbNbr3.TabIndex = 2;
+            this.lbNbr3.Text = "#3";
+            // 
+            // lbNbr2
+            // 
+            this.lbNbr2.AutoSize = true;
+            this.lbNbr2.Location = new System.Drawing.Point(20, 136);
+            this.lbNbr2.Name = "lbNbr2";
+            this.lbNbr2.Size = new System.Drawing.Size(43, 25);
+            this.lbNbr2.TabIndex = 1;
+            this.lbNbr2.Text = "#2";
+            // 
+            // lbNbr1
+            // 
+            this.lbNbr1.AutoSize = true;
+            this.lbNbr1.Location = new System.Drawing.Point(20, 66);
+            this.lbNbr1.Name = "lbNbr1";
+            this.lbNbr1.Size = new System.Drawing.Size(43, 25);
+            this.lbNbr1.TabIndex = 0;
+            this.lbNbr1.Text = "#1";
+            // 
+            // tabAdress
+            // 
+            this.tabAdress.Controls.Add(this.tbTown);
+            this.tabAdress.Controls.Add(this.tbHNr);
+            this.tabAdress.Controls.Add(this.tbCountry);
+            this.tabAdress.Controls.Add(this.tbZIP);
+            this.tabAdress.Controls.Add(this.tbStreet);
+            this.tabAdress.Controls.Add(this.lbHNr);
+            this.tabAdress.Controls.Add(this.lbTown);
+            this.tabAdress.Controls.Add(this.lbCountry);
+            this.tabAdress.Controls.Add(this.lbZip);
+            this.tabAdress.Controls.Add(this.lbStreet);
+            this.tabAdress.Location = new System.Drawing.Point(4, 34);
+            this.tabAdress.Name = "tabAdress";
+            this.tabAdress.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAdress.Size = new System.Drawing.Size(843, 722);
+            this.tabAdress.TabIndex = 2;
+            this.tabAdress.Text = "Adresse";
+            this.tabAdress.UseVisualStyleBackColor = true;
+            // 
+            // tabOther
+            // 
+            this.tabOther.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabOther.Controls.Add(this.lbOther);
+            this.tabOther.Controls.Add(this.rtbOther);
+            this.tabOther.Controls.Add(this.groubBMail);
+            this.tabOther.Location = new System.Drawing.Point(4, 34);
+            this.tabOther.Name = "tabOther";
+            this.tabOther.Padding = new System.Windows.Forms.Padding(3);
+            this.tabOther.Size = new System.Drawing.Size(843, 722);
+            this.tabOther.TabIndex = 3;
+            this.tabOther.Text = "Sonstiges";
+            // 
+            // tbNr4
+            // 
+            this.tbNr4.Location = new System.Drawing.Point(386, 273);
+            this.tbNr4.Name = "tbNr4";
+            this.tbNr4.Size = new System.Drawing.Size(211, 32);
+            this.tbNr4.TabIndex = 11;
+            // 
+            // tbNr2
+            // 
+            this.tbNr2.Location = new System.Drawing.Point(386, 133);
+            this.tbNr2.Name = "tbNr2";
+            this.tbNr2.Size = new System.Drawing.Size(211, 32);
+            this.tbNr2.TabIndex = 10;
+            // 
+            // tbNr3
+            // 
+            this.tbNr3.Location = new System.Drawing.Point(386, 203);
+            this.tbNr3.Name = "tbNr3";
+            this.tbNr3.Size = new System.Drawing.Size(211, 32);
+            this.tbNr3.TabIndex = 9;
+            // 
+            // tbNr1
+            // 
+            this.tbNr1.Location = new System.Drawing.Point(386, 63);
+            this.tbNr1.Name = "tbNr1";
+            this.tbNr1.Size = new System.Drawing.Size(211, 32);
+            this.tbNr1.TabIndex = 8;
+            // 
+            // lbSlash
+            // 
+            this.lbSlash.AutoSize = true;
+            this.lbSlash.Location = new System.Drawing.Point(300, 69);
+            this.lbSlash.Name = "lbSlash";
+            this.lbSlash.Size = new System.Drawing.Size(26, 25);
+            this.lbSlash.TabIndex = 12;
+            this.lbSlash.Text = "/";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(300, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 25);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "/";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(314, 206);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 25);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "/";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(325, 280);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "/";
+            // 
+            // combobNr1
+            // 
+            this.combobNr1.FormattingEnabled = true;
+            this.combobNr1.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr1.Location = new System.Drawing.Point(667, 69);
+            this.combobNr1.Name = "combobNr1";
+            this.combobNr1.Size = new System.Drawing.Size(121, 33);
+            this.combobNr1.TabIndex = 16;
+            // 
+            // combobNr2
+            // 
+            this.combobNr2.FormattingEnabled = true;
+            this.combobNr2.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr2.Location = new System.Drawing.Point(667, 132);
+            this.combobNr2.Name = "combobNr2";
+            this.combobNr2.Size = new System.Drawing.Size(121, 33);
+            this.combobNr2.TabIndex = 17;
+            // 
+            // combobNr3
+            // 
+            this.combobNr3.FormattingEnabled = true;
+            this.combobNr3.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr3.Location = new System.Drawing.Point(667, 205);
+            this.combobNr3.Name = "combobNr3";
+            this.combobNr3.Size = new System.Drawing.Size(121, 33);
+            this.combobNr3.TabIndex = 18;
+            // 
+            // combobNr4
+            // 
+            this.combobNr4.FormattingEnabled = true;
+            this.combobNr4.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr4.Location = new System.Drawing.Point(667, 268);
+            this.combobNr4.Name = "combobNr4";
+            this.combobNr4.Size = new System.Drawing.Size(121, 33);
+            this.combobNr4.TabIndex = 19;
+            // 
+            // maskBCC1
+            // 
+            this.maskBCC1.Location = new System.Drawing.Point(103, 66);
+            this.maskBCC1.Mask = "+00";
+            this.maskBCC1.Name = "maskBCC1";
+            this.maskBCC1.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC1.TabIndex = 20;
+            this.maskBCC1.Text = "49";
+            // 
+            // maskBCC2
+            // 
+            this.maskBCC2.Location = new System.Drawing.Point(103, 129);
+            this.maskBCC2.Mask = "+00";
+            this.maskBCC2.Name = "maskBCC2";
+            this.maskBCC2.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC2.TabIndex = 21;
+            this.maskBCC2.Text = "49";
+            // 
+            // maskBCC3
+            // 
+            this.maskBCC3.Location = new System.Drawing.Point(103, 206);
+            this.maskBCC3.Mask = "+00";
+            this.maskBCC3.Name = "maskBCC3";
+            this.maskBCC3.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC3.TabIndex = 22;
+            this.maskBCC3.Text = "49";
+            this.maskBCC3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
+            // 
+            // maskBCC4
+            // 
+            this.maskBCC4.Location = new System.Drawing.Point(103, 276);
+            this.maskBCC4.Mask = "+00";
+            this.maskBCC4.Name = "maskBCC4";
+            this.maskBCC4.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC4.TabIndex = 23;
+            this.maskBCC4.Text = "49";
+            // 
+            // lbStreet
+            // 
+            this.lbStreet.AutoSize = true;
+            this.lbStreet.Location = new System.Drawing.Point(20, 66);
+            this.lbStreet.Name = "lbStreet";
+            this.lbStreet.Size = new System.Drawing.Size(85, 25);
+            this.lbStreet.TabIndex = 0;
+            this.lbStreet.Text = "Straße";
+            // 
+            // lbZip
+            // 
+            this.lbZip.AutoSize = true;
+            this.lbZip.Location = new System.Drawing.Point(20, 116);
+            this.lbZip.Name = "lbZip";
+            this.lbZip.Size = new System.Drawing.Size(54, 25);
+            this.lbZip.TabIndex = 1;
+            this.lbZip.Text = "PLZ";
+            // 
+            // lbCountry
+            // 
+            this.lbCountry.AutoSize = true;
+            this.lbCountry.Location = new System.Drawing.Point(20, 166);
+            this.lbCountry.Name = "lbCountry";
+            this.lbCountry.Size = new System.Drawing.Size(66, 25);
+            this.lbCountry.TabIndex = 2;
+            this.lbCountry.Text = "Land";
+            // 
+            // lbTown
+            // 
+            this.lbTown.AutoSize = true;
+            this.lbTown.Location = new System.Drawing.Point(360, 116);
+            this.lbTown.Name = "lbTown";
+            this.lbTown.Size = new System.Drawing.Size(71, 25);
+            this.lbTown.TabIndex = 3;
+            this.lbTown.Text = "Stadt";
+            // 
+            // lbHNr
+            // 
+            this.lbHNr.AutoSize = true;
+            this.lbHNr.Location = new System.Drawing.Point(370, 66);
+            this.lbHNr.Name = "lbHNr";
+            this.lbHNr.Size = new System.Drawing.Size(39, 25);
+            this.lbHNr.TabIndex = 4;
+            this.lbHNr.Text = "Nr";
+            // 
+            // tbStreet
+            // 
+            this.tbStreet.Location = new System.Drawing.Point(123, 66);
+            this.tbStreet.Name = "tbStreet";
+            this.tbStreet.Size = new System.Drawing.Size(212, 32);
+            this.tbStreet.TabIndex = 5;
+            // 
+            // tbZIP
+            // 
+            this.tbZIP.Location = new System.Drawing.Point(123, 116);
+            this.tbZIP.Name = "tbZIP";
+            this.tbZIP.Size = new System.Drawing.Size(212, 32);
+            this.tbZIP.TabIndex = 6;
+            // 
+            // tbCountry
+            // 
+            this.tbCountry.Location = new System.Drawing.Point(123, 166);
+            this.tbCountry.Name = "tbCountry";
+            this.tbCountry.Size = new System.Drawing.Size(212, 32);
+            this.tbCountry.TabIndex = 7;
+            // 
+            // tbHNr
+            // 
+            this.tbHNr.Location = new System.Drawing.Point(459, 63);
+            this.tbHNr.Name = "tbHNr";
+            this.tbHNr.Size = new System.Drawing.Size(212, 32);
+            this.tbHNr.TabIndex = 8;
+            this.tbHNr.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // tbTown
+            // 
+            this.tbTown.Location = new System.Drawing.Point(459, 116);
+            this.tbTown.Name = "tbTown";
+            this.tbTown.Size = new System.Drawing.Size(212, 32);
+            this.tbTown.TabIndex = 9;
+            // 
+            // groubBMail
+            // 
+            this.groubBMail.Controls.Add(this.comboBMail2);
+            this.groubBMail.Controls.Add(this.comboBMail1);
+            this.groubBMail.Controls.Add(this.tbMail2);
+            this.groubBMail.Controls.Add(this.tbMail1);
+            this.groubBMail.Controls.Add(this.lbMail2);
+            this.groubBMail.Controls.Add(this.lbMail1);
+            this.groubBMail.Location = new System.Drawing.Point(20, 66);
+            this.groubBMail.Name = "groubBMail";
+            this.groubBMail.Size = new System.Drawing.Size(808, 169);
+            this.groubBMail.TabIndex = 0;
+            this.groubBMail.TabStop = false;
+            this.groubBMail.Text = "E-Mail";
+            // 
+            // lbMail1
+            // 
+            this.lbMail1.AutoSize = true;
+            this.lbMail1.Location = new System.Drawing.Point(20, 40);
+            this.lbMail1.Name = "lbMail1";
+            this.lbMail1.Size = new System.Drawing.Size(43, 25);
+            this.lbMail1.TabIndex = 0;
+            this.lbMail1.Text = "#1";
+            // 
+            // lbMail2
+            // 
+            this.lbMail2.AutoSize = true;
+            this.lbMail2.Location = new System.Drawing.Point(20, 95);
+            this.lbMail2.Name = "lbMail2";
+            this.lbMail2.Size = new System.Drawing.Size(43, 25);
+            this.lbMail2.TabIndex = 1;
+            this.lbMail2.Text = "#2";
+            // 
+            // tbMail1
+            // 
+            this.tbMail1.Location = new System.Drawing.Point(164, 33);
+            this.tbMail1.Name = "tbMail1";
+            this.tbMail1.Size = new System.Drawing.Size(425, 32);
+            this.tbMail1.TabIndex = 1;
+            // 
+            // tbMail2
+            // 
+            this.tbMail2.Location = new System.Drawing.Point(164, 88);
+            this.tbMail2.Name = "tbMail2";
+            this.tbMail2.Size = new System.Drawing.Size(425, 32);
+            this.tbMail2.TabIndex = 2;
+            // 
+            // comboBMail1
+            // 
+            this.comboBMail1.FormattingEnabled = true;
+            this.comboBMail1.Items.AddRange(new object[] {
+            "Privat",
+            "Geschäftlich",
+            "Spam"});
+            this.comboBMail1.Location = new System.Drawing.Point(635, 32);
+            this.comboBMail1.Name = "comboBMail1";
+            this.comboBMail1.Size = new System.Drawing.Size(121, 33);
+            this.comboBMail1.TabIndex = 3;
+            // 
+            // comboBMail2
+            // 
+            this.comboBMail2.FormattingEnabled = true;
+            this.comboBMail2.Items.AddRange(new object[] {
+            "Privat",
+            "Geschäftlich",
+            "Spam"});
+            this.comboBMail2.Location = new System.Drawing.Point(635, 95);
+            this.comboBMail2.Name = "comboBMail2";
+            this.comboBMail2.Size = new System.Drawing.Size(121, 33);
+            this.comboBMail2.TabIndex = 4;
+            // 
+            // rtbOther
+            // 
+            this.rtbOther.Location = new System.Drawing.Point(20, 287);
+            this.rtbOther.Name = "rtbOther";
+            this.rtbOther.Size = new System.Drawing.Size(808, 252);
+            this.rtbOther.TabIndex = 5;
+            this.rtbOther.Text = "";
+            // 
+            // lbOther
+            // 
+            this.lbOther.AutoSize = true;
+            this.lbOther.Location = new System.Drawing.Point(15, 248);
+            this.lbOther.Name = "lbOther";
+            this.lbOther.Size = new System.Drawing.Size(121, 25);
+            this.lbOther.TabIndex = 6;
+            this.lbOther.Text = "Sonstiges";
+            this.lbOther.Click += new System.EventHandler(this.label6_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(875, 830);
+            this.ClientSize = new System.Drawing.Size(875, 672);
             this.Controls.Add(this.tabContactInfo);
             this.Controls.Add(this.btSave);
             this.Controls.Add(this.btPreview);
@@ -379,11 +839,19 @@
             this.tabContactInfo.ResumeLayout(false);
             this.tabGeneral.ResumeLayout(false);
             this.tabGeneral.PerformLayout();
-            this.gbGender.ResumeLayout(false);
-            this.gbGender.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbContact)).EndInit();
             this.gbShowAs.ResumeLayout(false);
             this.gbShowAs.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picbContact)).EndInit();
+            this.gbGender.ResumeLayout(false);
+            this.gbGender.PerformLayout();
+            this.tabNumbers.ResumeLayout(false);
+            this.tabNumbers.PerformLayout();
+            this.tabAdress.ResumeLayout(false);
+            this.tabAdress.PerformLayout();
+            this.tabOther.ResumeLayout(false);
+            this.tabOther.PerformLayout();
+            this.groubBMail.ResumeLayout(false);
+            this.groubBMail.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -418,6 +886,49 @@
         private System.Windows.Forms.PictureBox picbContact;
         private System.Windows.Forms.Button btPic;
         private System.Windows.Forms.Label lbPic;
+        private System.Windows.Forms.Label lbNbr1;
+        private System.Windows.Forms.Label lbNbr4;
+        private System.Windows.Forms.Label lbNbr3;
+        private System.Windows.Forms.Label lbNbr2;
+        private System.Windows.Forms.TextBox tbNbrVw4;
+        private System.Windows.Forms.TextBox tbNbrVw2;
+        private System.Windows.Forms.TextBox tbNbrVw3;
+        private System.Windows.Forms.TextBox tbNbrVw1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbSlash;
+        private System.Windows.Forms.TextBox tbNr4;
+        private System.Windows.Forms.TextBox tbNr2;
+        private System.Windows.Forms.TextBox tbNr3;
+        private System.Windows.Forms.TextBox tbNr1;
+        private System.Windows.Forms.MaskedTextBox maskBCC1;
+        private System.Windows.Forms.ComboBox combobNr4;
+        private System.Windows.Forms.ComboBox combobNr3;
+        private System.Windows.Forms.ComboBox combobNr2;
+        private System.Windows.Forms.ComboBox combobNr1;
+        private System.Windows.Forms.MaskedTextBox maskBCC4;
+        private System.Windows.Forms.MaskedTextBox maskBCC3;
+        private System.Windows.Forms.MaskedTextBox maskBCC2;
+        private System.Windows.Forms.TextBox tbTown;
+        private System.Windows.Forms.TextBox tbHNr;
+        private System.Windows.Forms.TextBox tbCountry;
+        private System.Windows.Forms.TextBox tbZIP;
+        private System.Windows.Forms.TextBox tbStreet;
+        private System.Windows.Forms.Label lbHNr;
+        private System.Windows.Forms.Label lbTown;
+        private System.Windows.Forms.Label lbCountry;
+        private System.Windows.Forms.Label lbZip;
+        private System.Windows.Forms.Label lbStreet;
+        private System.Windows.Forms.GroupBox groubBMail;
+        private System.Windows.Forms.ComboBox comboBMail2;
+        private System.Windows.Forms.ComboBox comboBMail1;
+        private System.Windows.Forms.TextBox tbMail2;
+        private System.Windows.Forms.TextBox tbMail1;
+        private System.Windows.Forms.Label lbMail2;
+        private System.Windows.Forms.Label lbMail1;
+        private System.Windows.Forms.Label lbOther;
+        private System.Windows.Forms.RichTextBox rtbOther;
 
     }
 }
