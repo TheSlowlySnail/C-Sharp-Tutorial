@@ -7,3 +7,4 @@ c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuc
 c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.csproj.GenerateResource.Cache
 c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.exe
 c:\users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.pdb
+C:\Users\helge_000\documents\visual studio 2013\Projects\Telefonbuch2\Telefonbuch2\obj\Debug\Telefonbuch2.frmPreview.resources

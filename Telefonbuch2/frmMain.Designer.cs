@@ -40,7 +40,7 @@
             this.tabContactInfo = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
             this.groupBBirthday = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tbBirthday = new System.Windows.Forms.DateTimePicker();
             this.lbPic = new System.Windows.Forms.Label();
             this.picbContact = new System.Windows.Forms.PictureBox();
             this.gbShowAs = new System.Windows.Forms.GroupBox();
@@ -58,6 +58,10 @@
             this.tbName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
             this.tabNumbers = new System.Windows.Forms.TabPage();
+            this.btnDel4 = new System.Windows.Forms.Button();
+            this.btnDel3 = new System.Windows.Forms.Button();
+            this.btnDel2 = new System.Windows.Forms.Button();
+            this.btnDelNr1 = new System.Windows.Forms.Button();
             this.maskBCC4 = new System.Windows.Forms.MaskedTextBox();
             this.maskBCC3 = new System.Windows.Forms.MaskedTextBox();
             this.maskBCC2 = new System.Windows.Forms.MaskedTextBox();
@@ -104,11 +108,6 @@
             this.lbMail2 = new System.Windows.Forms.Label();
             this.lbMail1 = new System.Windows.Forms.Label();
             this.lbChoice = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.ausw = new System.Windows.Forms.Label();
             this.tabContactInfo.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.groupBBirthday.SuspendLayout();
@@ -165,6 +164,7 @@
             this.ttButtons.SetToolTip(this.btPreview, "Vorschau");
             this.btPreview.UseVisualStyleBackColor = true;
             this.btPreview.Visible = false;
+            this.btPreview.Click += new System.EventHandler(this.btPreview_Click);
             // 
             // btSave
             // 
@@ -182,6 +182,7 @@
             // 
             this.ttButtons.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.ttButtons.ToolTipTitle = "Information";
+            
             // 
             // btPic
             // 
@@ -233,7 +234,7 @@
             // 
             // groupBBirthday
             // 
-            this.groupBBirthday.Controls.Add(this.dateTimePicker1);
+            this.groupBBirthday.Controls.Add(this.tbBirthday);
             this.groupBBirthday.Location = new System.Drawing.Point(571, 340);
             this.groupBBirthday.Name = "groupBBirthday";
             this.groupBBirthday.Size = new System.Drawing.Size(200, 100);
@@ -241,15 +242,15 @@
             this.groupBBirthday.TabStop = false;
             this.groupBBirthday.Text = "Geburtstag";
             // 
-            // dateTimePicker1
+            // tbBirthday
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(22, 31);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(153, 32);
-            this.dateTimePicker1.TabIndex = 0;
+            this.tbBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.tbBirthday.Location = new System.Drawing.Point(22, 31);
+            this.tbBirthday.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.tbBirthday.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.tbBirthday.Name = "tbBirthday";
+            this.tbBirthday.Size = new System.Drawing.Size(153, 32);
+            this.tbBirthday.TabIndex = 0;
             // 
             // lbPic
             // 
@@ -405,11 +406,10 @@
             // tabNumbers
             // 
             this.tabNumbers.BackColor = System.Drawing.Color.LightCoral;
-            this.tabNumbers.Controls.Add(this.ausw);
-            this.tabNumbers.Controls.Add(this.button4);
-            this.tabNumbers.Controls.Add(this.button3);
-            this.tabNumbers.Controls.Add(this.button2);
-            this.tabNumbers.Controls.Add(this.button1);
+            this.tabNumbers.Controls.Add(this.btnDel4);
+            this.tabNumbers.Controls.Add(this.btnDel3);
+            this.tabNumbers.Controls.Add(this.btnDel2);
+            this.tabNumbers.Controls.Add(this.btnDelNr1);
             this.tabNumbers.Controls.Add(this.maskBCC4);
             this.tabNumbers.Controls.Add(this.maskBCC3);
             this.tabNumbers.Controls.Add(this.maskBCC2);
@@ -440,6 +440,46 @@
             this.tabNumbers.Size = new System.Drawing.Size(843, 722);
             this.tabNumbers.TabIndex = 1;
             this.tabNumbers.Text = "Telefonnummern";
+            // 
+            // btnDel4
+            // 
+            this.btnDel4.Location = new System.Drawing.Point(794, 268);
+            this.btnDel4.Name = "btnDel4";
+            this.btnDel4.Size = new System.Drawing.Size(41, 47);
+            this.btnDel4.TabIndex = 27;
+            this.btnDel4.Text = "btnDelNr4";
+            this.btnDel4.UseVisualStyleBackColor = true;
+            this.btnDel4.Click += new System.EventHandler(this.btnDeleteClicked);
+            // 
+            // btnDel3
+            // 
+            this.btnDel3.Location = new System.Drawing.Point(799, 205);
+            this.btnDel3.Name = "btnDel3";
+            this.btnDel3.Size = new System.Drawing.Size(41, 47);
+            this.btnDel3.TabIndex = 26;
+            this.btnDel3.Text = "btnDelNr3";
+            this.btnDel3.UseVisualStyleBackColor = true;
+            this.btnDel3.Click += new System.EventHandler(this.btnDeleteClicked);
+            // 
+            // btnDel2
+            // 
+            this.btnDel2.Location = new System.Drawing.Point(799, 133);
+            this.btnDel2.Name = "btnDel2";
+            this.btnDel2.Size = new System.Drawing.Size(41, 47);
+            this.btnDel2.TabIndex = 25;
+            this.btnDel2.Text = "btnDelNr2";
+            this.btnDel2.UseVisualStyleBackColor = true;
+            this.btnDel2.Click += new System.EventHandler(this.btnDeleteClicked);
+            // 
+            // btnDelNr1
+            // 
+            this.btnDelNr1.Location = new System.Drawing.Point(799, 69);
+            this.btnDelNr1.Name = "btnDelNr1";
+            this.btnDelNr1.Size = new System.Drawing.Size(41, 47);
+            this.btnDelNr1.TabIndex = 24;
+            this.btnDelNr1.Text = "btnDelNr1";
+            this.btnDelNr1.UseVisualStyleBackColor = true;
+            this.btnDelNr1.Click += new System.EventHandler(this.btnDeleteClicked);
             // 
             // maskBCC4
             // 
@@ -869,51 +909,6 @@
             this.lbChoice.TabIndex = 1;
             this.lbChoice.Text = "Wählen";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(799, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(41, 47);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(799, 133);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(41, 47);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(799, 205);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(41, 47);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(794, 268);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(41, 47);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // ausw
-            // 
-            this.ausw.AutoSize = true;
-            this.ausw.Location = new System.Drawing.Point(634, 355);
-            this.ausw.Name = "ausw";
-            this.ausw.Size = new System.Drawing.Size(80, 25);
-            this.ausw.TabIndex = 28;
-            this.ausw.Text = "label1";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 25F);
@@ -1030,13 +1025,12 @@
         private System.Windows.Forms.Label lbOther;
         private System.Windows.Forms.RichTextBox rtbOther;
         private System.Windows.Forms.GroupBox groupBBirthday;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker tbBirthday;
         private System.Windows.Forms.Label lbChoice;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label ausw;
+        private System.Windows.Forms.Button btnDel4;
+        private System.Windows.Forms.Button btnDel3;
+        private System.Windows.Forms.Button btnDel2;
+        private System.Windows.Forms.Button btnDelNr1;
 
     }
 }
