@@ -104,6 +104,11 @@
             this.lbMail2 = new System.Windows.Forms.Label();
             this.lbMail1 = new System.Windows.Forms.Label();
             this.lbChoice = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.ausw = new System.Windows.Forms.Label();
             this.tabContactInfo.SuspendLayout();
             this.tabGeneral.SuspendLayout();
             this.groupBBirthday.SuspendLayout();
@@ -400,6 +405,11 @@
             // tabNumbers
             // 
             this.tabNumbers.BackColor = System.Drawing.Color.LightCoral;
+            this.tabNumbers.Controls.Add(this.ausw);
+            this.tabNumbers.Controls.Add(this.button4);
+            this.tabNumbers.Controls.Add(this.button3);
+            this.tabNumbers.Controls.Add(this.button2);
+            this.tabNumbers.Controls.Add(this.button1);
             this.tabNumbers.Controls.Add(this.maskBCC4);
             this.tabNumbers.Controls.Add(this.maskBCC3);
             this.tabNumbers.Controls.Add(this.maskBCC2);
@@ -478,6 +488,7 @@
             this.combobNr4.Name = "combobNr4";
             this.combobNr4.Size = new System.Drawing.Size(121, 33);
             this.combobNr4.TabIndex = 19;
+            this.combobNr4.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // combobNr3
             // 
@@ -490,6 +501,7 @@
             this.combobNr3.Name = "combobNr3";
             this.combobNr3.Size = new System.Drawing.Size(121, 33);
             this.combobNr3.TabIndex = 18;
+            this.combobNr3.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // combobNr2
             // 
@@ -502,6 +514,7 @@
             this.combobNr2.Name = "combobNr2";
             this.combobNr2.Size = new System.Drawing.Size(121, 33);
             this.combobNr2.TabIndex = 17;
+            this.combobNr2.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // combobNr1
             // 
@@ -514,6 +527,7 @@
             this.combobNr1.Name = "combobNr1";
             this.combobNr1.Size = new System.Drawing.Size(121, 33);
             this.combobNr1.TabIndex = 16;
+            this.combobNr1.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // label5
             // 
@@ -799,6 +813,7 @@
             this.comboBMail2.Name = "comboBMail2";
             this.comboBMail2.Size = new System.Drawing.Size(121, 33);
             this.comboBMail2.TabIndex = 4;
+            this.comboBMail2.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // comboBMail1
             // 
@@ -811,6 +826,7 @@
             this.comboBMail1.Name = "comboBMail1";
             this.comboBMail1.Size = new System.Drawing.Size(121, 33);
             this.comboBMail1.TabIndex = 3;
+            this.comboBMail1.SelectedIndexChanged += new System.EventHandler(this.cBoxesChanged);
             // 
             // tbMail2
             // 
@@ -852,6 +868,51 @@
             this.lbChoice.Size = new System.Drawing.Size(96, 25);
             this.lbChoice.TabIndex = 1;
             this.lbChoice.Text = "Wählen";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(799, 69);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 47);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(799, 133);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(41, 47);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(799, 205);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(41, 47);
+            this.button3.TabIndex = 26;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(794, 268);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(41, 47);
+            this.button4.TabIndex = 27;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // ausw
+            // 
+            this.ausw.AutoSize = true;
+            this.ausw.Location = new System.Drawing.Point(634, 355);
+            this.ausw.Name = "ausw";
+            this.ausw.Size = new System.Drawing.Size(80, 25);
+            this.ausw.TabIndex = 28;
+            this.ausw.Text = "label1";
             // 
             // frmMain
             // 
@@ -971,6 +1032,11 @@
         private System.Windows.Forms.GroupBox groupBBirthday;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lbChoice;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label ausw;
 
     }
 }

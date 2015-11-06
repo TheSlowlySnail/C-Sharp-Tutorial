@@ -12,6 +12,13 @@ namespace Telefonbuch2
 {
     public partial class frmMain : Form
     {
+        Image iContactImg;
+        string numberType1 ="";
+        string numberType2 = "";
+        string numberType3 = "";
+        string numberType4 = "";
+        string mailType1 = "";
+        string mailType2 = "";
 
 
         public frmMain()
@@ -52,11 +59,71 @@ namespace Telefonbuch2
         //Load Picture
         private void btPic_Click(object sender, EventArgs e)
         {
+            
+
             OpenFileDialog of = new OpenFileDialog();
             of.Title = "Bitte Bild auswählen";
             of.Multiselect = false;
             of.Filter = "Bilder|*.png;*.jpg|PNG-Bilder|*.png|JPG-Bilder|*.jpg";
-            of.ShowDialog();
+            of.FilterIndex = 0;
+            DialogResult dr = of.ShowDialog();
+
+            if(dr == DialogResult.OK)
+            {
+                iContactImg = Image.FromFile(of.FileName);
+                this.picbContact.Image = iContactImg;
+            }
+            
+        }
+
+        private void cBoxesChanged(object sender, EventArgs e)
+        {
+            ComboBox cBox = new ComboBox();
+            cBox = (ComboBox)sender;
+
+            switch(cBox.Name)
+            {
+                case"combobNr1":
+                    if (cBox.SelectedIndex != -1)
+                    {
+                        numberType1 = cBox.SelectedItem.ToString();
+                        
+                    }
+                    
+                    break;
+                case "combobNr2":
+                    if (cBox.SelectedIndex != -1)
+                    {
+                        numberType2 = cBox.SelectedItem.ToString();
+                    }
+                    break;
+                case "combobNr3":
+                    if (cBox.SelectedIndex != -1)
+                    {
+                        numberType3 = cBox.SelectedItem.ToString();
+                    }
+                    break;
+                case "combobNr4":
+                    if (cBox.SelectedIndex != -1)
+                    {
+                        numberType4 = cBox.SelectedItem.ToString();
+                    }
+                    break;
+                case "combobBMail1":
+                    if (cBox.SelectedIndex != -1)
+                    {
+                        mailType1 = cBox.SelectedItem.ToString();
+                    }
+                    break;
+                case "combobBMail2":
+                    if (cBox.SelectedIndex != -1)
+                    {
+                        mailType2 = cBox.SelectedItem.ToString();
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
 
