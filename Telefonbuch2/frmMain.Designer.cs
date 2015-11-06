@@ -39,11 +39,13 @@
             this.btPic = new System.Windows.Forms.Button();
             this.tabContactInfo = new System.Windows.Forms.TabControl();
             this.tabGeneral = new System.Windows.Forms.TabPage();
+            this.groupBBirthday = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lbPic = new System.Windows.Forms.Label();
             this.picbContact = new System.Windows.Forms.PictureBox();
             this.gbShowAs = new System.Windows.Forms.GroupBox();
             this.combobShowAs = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbExample = new System.Windows.Forms.Label();
             this.gbGender = new System.Windows.Forms.GroupBox();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
@@ -56,6 +58,22 @@
             this.tbName = new System.Windows.Forms.TextBox();
             this.lbName = new System.Windows.Forms.Label();
             this.tabNumbers = new System.Windows.Forms.TabPage();
+            this.maskBCC4 = new System.Windows.Forms.MaskedTextBox();
+            this.maskBCC3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskBCC2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskBCC1 = new System.Windows.Forms.MaskedTextBox();
+            this.combobNr4 = new System.Windows.Forms.ComboBox();
+            this.combobNr3 = new System.Windows.Forms.ComboBox();
+            this.combobNr2 = new System.Windows.Forms.ComboBox();
+            this.combobNr1 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbSlash = new System.Windows.Forms.Label();
+            this.tbNr4 = new System.Windows.Forms.TextBox();
+            this.tbNr2 = new System.Windows.Forms.TextBox();
+            this.tbNr3 = new System.Windows.Forms.TextBox();
+            this.tbNr1 = new System.Windows.Forms.TextBox();
             this.tbNbrVw4 = new System.Windows.Forms.TextBox();
             this.tbNbrVw2 = new System.Windows.Forms.TextBox();
             this.tbNbrVw3 = new System.Windows.Forms.TextBox();
@@ -65,44 +83,30 @@
             this.lbNbr2 = new System.Windows.Forms.Label();
             this.lbNbr1 = new System.Windows.Forms.Label();
             this.tabAdress = new System.Windows.Forms.TabPage();
-            this.tabOther = new System.Windows.Forms.TabPage();
-            this.tbNr4 = new System.Windows.Forms.TextBox();
-            this.tbNr2 = new System.Windows.Forms.TextBox();
-            this.tbNr3 = new System.Windows.Forms.TextBox();
-            this.tbNr1 = new System.Windows.Forms.TextBox();
-            this.lbSlash = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.combobNr1 = new System.Windows.Forms.ComboBox();
-            this.combobNr2 = new System.Windows.Forms.ComboBox();
-            this.combobNr3 = new System.Windows.Forms.ComboBox();
-            this.combobNr4 = new System.Windows.Forms.ComboBox();
-            this.maskBCC1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskBCC2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskBCC3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskBCC4 = new System.Windows.Forms.MaskedTextBox();
-            this.lbStreet = new System.Windows.Forms.Label();
-            this.lbZip = new System.Windows.Forms.Label();
-            this.lbCountry = new System.Windows.Forms.Label();
-            this.lbTown = new System.Windows.Forms.Label();
-            this.lbHNr = new System.Windows.Forms.Label();
-            this.tbStreet = new System.Windows.Forms.TextBox();
-            this.tbZIP = new System.Windows.Forms.TextBox();
-            this.tbCountry = new System.Windows.Forms.TextBox();
-            this.tbHNr = new System.Windows.Forms.TextBox();
             this.tbTown = new System.Windows.Forms.TextBox();
-            this.groubBMail = new System.Windows.Forms.GroupBox();
-            this.lbMail1 = new System.Windows.Forms.Label();
-            this.lbMail2 = new System.Windows.Forms.Label();
-            this.tbMail1 = new System.Windows.Forms.TextBox();
-            this.tbMail2 = new System.Windows.Forms.TextBox();
-            this.comboBMail1 = new System.Windows.Forms.ComboBox();
-            this.comboBMail2 = new System.Windows.Forms.ComboBox();
-            this.rtbOther = new System.Windows.Forms.RichTextBox();
+            this.tbHNr = new System.Windows.Forms.TextBox();
+            this.tbCountry = new System.Windows.Forms.TextBox();
+            this.tbZIP = new System.Windows.Forms.TextBox();
+            this.tbStreet = new System.Windows.Forms.TextBox();
+            this.lbHNr = new System.Windows.Forms.Label();
+            this.lbTown = new System.Windows.Forms.Label();
+            this.lbCountry = new System.Windows.Forms.Label();
+            this.lbZip = new System.Windows.Forms.Label();
+            this.lbStreet = new System.Windows.Forms.Label();
+            this.tabOther = new System.Windows.Forms.TabPage();
             this.lbOther = new System.Windows.Forms.Label();
+            this.rtbOther = new System.Windows.Forms.RichTextBox();
+            this.groubBMail = new System.Windows.Forms.GroupBox();
+            this.comboBMail2 = new System.Windows.Forms.ComboBox();
+            this.comboBMail1 = new System.Windows.Forms.ComboBox();
+            this.tbMail2 = new System.Windows.Forms.TextBox();
+            this.tbMail1 = new System.Windows.Forms.TextBox();
+            this.lbMail2 = new System.Windows.Forms.Label();
+            this.lbMail1 = new System.Windows.Forms.Label();
+            this.lbChoice = new System.Windows.Forms.Label();
             this.tabContactInfo.SuspendLayout();
             this.tabGeneral.SuspendLayout();
+            this.groupBBirthday.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbContact)).BeginInit();
             this.gbShowAs.SuspendLayout();
             this.gbGender.SuspendLayout();
@@ -122,6 +126,7 @@
             this.btNew.TabIndex = 0;
             this.ttButtons.SetToolTip(this.btNew, "Neuer Kontakt");
             this.btNew.UseVisualStyleBackColor = true;
+            this.btNew.Click += new System.EventHandler(this.btNew_Click);
             // 
             // ilbuttons
             // 
@@ -154,6 +159,7 @@
             this.btPreview.TabIndex = 2;
             this.ttButtons.SetToolTip(this.btPreview, "Vorschau");
             this.btPreview.UseVisualStyleBackColor = true;
+            this.btPreview.Visible = false;
             // 
             // btSave
             // 
@@ -165,6 +171,7 @@
             this.btSave.TabIndex = 3;
             this.ttButtons.SetToolTip(this.btSave, "Speichern");
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Visible = false;
             // 
             // ttButtons
             // 
@@ -180,6 +187,7 @@
             this.btPic.Text = "...";
             this.ttButtons.SetToolTip(this.btPic, "Bild laden");
             this.btPic.UseVisualStyleBackColor = true;
+            this.btPic.Click += new System.EventHandler(this.btPic_Click);
             // 
             // tabContactInfo
             // 
@@ -192,10 +200,12 @@
             this.tabContactInfo.SelectedIndex = 0;
             this.tabContactInfo.Size = new System.Drawing.Size(851, 760);
             this.tabContactInfo.TabIndex = 4;
+            this.tabContactInfo.Visible = false;
             // 
             // tabGeneral
             // 
             this.tabGeneral.BackColor = System.Drawing.Color.DarkRed;
+            this.tabGeneral.Controls.Add(this.groupBBirthday);
             this.tabGeneral.Controls.Add(this.btPic);
             this.tabGeneral.Controls.Add(this.lbPic);
             this.tabGeneral.Controls.Add(this.picbContact);
@@ -215,6 +225,26 @@
             this.tabGeneral.Size = new System.Drawing.Size(843, 722);
             this.tabGeneral.TabIndex = 0;
             this.tabGeneral.Text = "Allgemeines";
+            // 
+            // groupBBirthday
+            // 
+            this.groupBBirthday.Controls.Add(this.dateTimePicker1);
+            this.groupBBirthday.Location = new System.Drawing.Point(571, 340);
+            this.groupBBirthday.Name = "groupBBirthday";
+            this.groupBBirthday.Size = new System.Drawing.Size(200, 100);
+            this.groupBBirthday.TabIndex = 13;
+            this.groupBBirthday.TabStop = false;
+            this.groupBBirthday.Text = "Geburtstag";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(22, 31);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1930, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(153, 32);
+            this.dateTimePicker1.TabIndex = 0;
             // 
             // lbPic
             // 
@@ -238,7 +268,7 @@
             // gbShowAs
             // 
             this.gbShowAs.Controls.Add(this.combobShowAs);
-            this.gbShowAs.Controls.Add(this.label1);
+            this.gbShowAs.Controls.Add(this.lbExample);
             this.gbShowAs.Location = new System.Drawing.Point(17, 408);
             this.gbShowAs.Name = "gbShowAs";
             this.gbShowAs.Size = new System.Drawing.Size(454, 120);
@@ -259,15 +289,16 @@
             this.combobShowAs.Name = "combobShowAs";
             this.combobShowAs.Size = new System.Drawing.Size(442, 33);
             this.combobShowAs.TabIndex = 1;
+            this.combobShowAs.SelectedIndexChanged += new System.EventHandler(this.combobShowAs_SelectedIndexChanged);
             // 
-            // label1
+            // lbExample
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Beispiel";
+            this.lbExample.AutoSize = true;
+            this.lbExample.Location = new System.Drawing.Point(1, 92);
+            this.lbExample.Name = "lbExample";
+            this.lbExample.Size = new System.Drawing.Size(100, 25);
+            this.lbExample.TabIndex = 0;
+            this.lbExample.Text = "Beispiel";
             // 
             // gbGender
             // 
@@ -400,6 +431,154 @@
             this.tabNumbers.TabIndex = 1;
             this.tabNumbers.Text = "Telefonnummern";
             // 
+            // maskBCC4
+            // 
+            this.maskBCC4.Location = new System.Drawing.Point(103, 276);
+            this.maskBCC4.Mask = "+00";
+            this.maskBCC4.Name = "maskBCC4";
+            this.maskBCC4.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC4.TabIndex = 23;
+            this.maskBCC4.Text = "49";
+            // 
+            // maskBCC3
+            // 
+            this.maskBCC3.Location = new System.Drawing.Point(103, 206);
+            this.maskBCC3.Mask = "+00";
+            this.maskBCC3.Name = "maskBCC3";
+            this.maskBCC3.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC3.TabIndex = 22;
+            this.maskBCC3.Text = "49";
+            // 
+            // maskBCC2
+            // 
+            this.maskBCC2.Location = new System.Drawing.Point(103, 129);
+            this.maskBCC2.Mask = "+00";
+            this.maskBCC2.Name = "maskBCC2";
+            this.maskBCC2.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC2.TabIndex = 21;
+            this.maskBCC2.Text = "49";
+            // 
+            // maskBCC1
+            // 
+            this.maskBCC1.Location = new System.Drawing.Point(103, 66);
+            this.maskBCC1.Mask = "+00";
+            this.maskBCC1.Name = "maskBCC1";
+            this.maskBCC1.Size = new System.Drawing.Size(56, 32);
+            this.maskBCC1.TabIndex = 20;
+            this.maskBCC1.Text = "49";
+            // 
+            // combobNr4
+            // 
+            this.combobNr4.FormattingEnabled = true;
+            this.combobNr4.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr4.Location = new System.Drawing.Point(667, 268);
+            this.combobNr4.Name = "combobNr4";
+            this.combobNr4.Size = new System.Drawing.Size(121, 33);
+            this.combobNr4.TabIndex = 19;
+            // 
+            // combobNr3
+            // 
+            this.combobNr3.FormattingEnabled = true;
+            this.combobNr3.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr3.Location = new System.Drawing.Point(667, 205);
+            this.combobNr3.Name = "combobNr3";
+            this.combobNr3.Size = new System.Drawing.Size(121, 33);
+            this.combobNr3.TabIndex = 18;
+            // 
+            // combobNr2
+            // 
+            this.combobNr2.FormattingEnabled = true;
+            this.combobNr2.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr2.Location = new System.Drawing.Point(667, 132);
+            this.combobNr2.Name = "combobNr2";
+            this.combobNr2.Size = new System.Drawing.Size(121, 33);
+            this.combobNr2.TabIndex = 17;
+            // 
+            // combobNr1
+            // 
+            this.combobNr1.FormattingEnabled = true;
+            this.combobNr1.Items.AddRange(new object[] {
+            "Handy",
+            "Privat",
+            "Geschäftlich"});
+            this.combobNr1.Location = new System.Drawing.Point(667, 69);
+            this.combobNr1.Name = "combobNr1";
+            this.combobNr1.Size = new System.Drawing.Size(121, 33);
+            this.combobNr1.TabIndex = 16;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(325, 280);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 25);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "/";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(314, 206);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 25);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "/";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(300, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 25);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "/";
+            // 
+            // lbSlash
+            // 
+            this.lbSlash.AutoSize = true;
+            this.lbSlash.Location = new System.Drawing.Point(300, 69);
+            this.lbSlash.Name = "lbSlash";
+            this.lbSlash.Size = new System.Drawing.Size(26, 25);
+            this.lbSlash.TabIndex = 12;
+            this.lbSlash.Text = "/";
+            // 
+            // tbNr4
+            // 
+            this.tbNr4.Location = new System.Drawing.Point(386, 273);
+            this.tbNr4.Name = "tbNr4";
+            this.tbNr4.Size = new System.Drawing.Size(211, 32);
+            this.tbNr4.TabIndex = 11;
+            // 
+            // tbNr2
+            // 
+            this.tbNr2.Location = new System.Drawing.Point(386, 133);
+            this.tbNr2.Name = "tbNr2";
+            this.tbNr2.Size = new System.Drawing.Size(211, 32);
+            this.tbNr2.TabIndex = 10;
+            // 
+            // tbNr3
+            // 
+            this.tbNr3.Location = new System.Drawing.Point(386, 203);
+            this.tbNr3.Name = "tbNr3";
+            this.tbNr3.Size = new System.Drawing.Size(211, 32);
+            this.tbNr3.TabIndex = 9;
+            // 
+            // tbNr1
+            // 
+            this.tbNr1.Location = new System.Drawing.Point(386, 63);
+            this.tbNr1.Name = "tbNr1";
+            this.tbNr1.Size = new System.Drawing.Size(211, 32);
+            this.tbNr1.TabIndex = 8;
+            // 
             // tbNbrVw4
             // 
             this.tbNbrVw4.Location = new System.Drawing.Point(176, 276);
@@ -484,6 +663,86 @@
             this.tabAdress.Text = "Adresse";
             this.tabAdress.UseVisualStyleBackColor = true;
             // 
+            // tbTown
+            // 
+            this.tbTown.Location = new System.Drawing.Point(459, 116);
+            this.tbTown.Name = "tbTown";
+            this.tbTown.Size = new System.Drawing.Size(212, 32);
+            this.tbTown.TabIndex = 9;
+            // 
+            // tbHNr
+            // 
+            this.tbHNr.Location = new System.Drawing.Point(459, 63);
+            this.tbHNr.Name = "tbHNr";
+            this.tbHNr.Size = new System.Drawing.Size(212, 32);
+            this.tbHNr.TabIndex = 8;
+            // 
+            // tbCountry
+            // 
+            this.tbCountry.Location = new System.Drawing.Point(123, 166);
+            this.tbCountry.Name = "tbCountry";
+            this.tbCountry.Size = new System.Drawing.Size(212, 32);
+            this.tbCountry.TabIndex = 7;
+            // 
+            // tbZIP
+            // 
+            this.tbZIP.Location = new System.Drawing.Point(123, 116);
+            this.tbZIP.Name = "tbZIP";
+            this.tbZIP.Size = new System.Drawing.Size(212, 32);
+            this.tbZIP.TabIndex = 6;
+            // 
+            // tbStreet
+            // 
+            this.tbStreet.Location = new System.Drawing.Point(123, 66);
+            this.tbStreet.Name = "tbStreet";
+            this.tbStreet.Size = new System.Drawing.Size(212, 32);
+            this.tbStreet.TabIndex = 5;
+            // 
+            // lbHNr
+            // 
+            this.lbHNr.AutoSize = true;
+            this.lbHNr.Location = new System.Drawing.Point(370, 66);
+            this.lbHNr.Name = "lbHNr";
+            this.lbHNr.Size = new System.Drawing.Size(39, 25);
+            this.lbHNr.TabIndex = 4;
+            this.lbHNr.Text = "Nr";
+            // 
+            // lbTown
+            // 
+            this.lbTown.AutoSize = true;
+            this.lbTown.Location = new System.Drawing.Point(360, 116);
+            this.lbTown.Name = "lbTown";
+            this.lbTown.Size = new System.Drawing.Size(71, 25);
+            this.lbTown.TabIndex = 3;
+            this.lbTown.Text = "Stadt";
+            // 
+            // lbCountry
+            // 
+            this.lbCountry.AutoSize = true;
+            this.lbCountry.Location = new System.Drawing.Point(20, 166);
+            this.lbCountry.Name = "lbCountry";
+            this.lbCountry.Size = new System.Drawing.Size(66, 25);
+            this.lbCountry.TabIndex = 2;
+            this.lbCountry.Text = "Land";
+            // 
+            // lbZip
+            // 
+            this.lbZip.AutoSize = true;
+            this.lbZip.Location = new System.Drawing.Point(20, 116);
+            this.lbZip.Name = "lbZip";
+            this.lbZip.Size = new System.Drawing.Size(54, 25);
+            this.lbZip.TabIndex = 1;
+            this.lbZip.Text = "PLZ";
+            // 
+            // lbStreet
+            // 
+            this.lbStreet.AutoSize = true;
+            this.lbStreet.Location = new System.Drawing.Point(20, 66);
+            this.lbStreet.Name = "lbStreet";
+            this.lbStreet.Size = new System.Drawing.Size(85, 25);
+            this.lbStreet.TabIndex = 0;
+            this.lbStreet.Text = "Straße";
+            // 
             // tabOther
             // 
             this.tabOther.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -497,235 +756,22 @@
             this.tabOther.TabIndex = 3;
             this.tabOther.Text = "Sonstiges";
             // 
-            // tbNr4
+            // lbOther
             // 
-            this.tbNr4.Location = new System.Drawing.Point(386, 273);
-            this.tbNr4.Name = "tbNr4";
-            this.tbNr4.Size = new System.Drawing.Size(211, 32);
-            this.tbNr4.TabIndex = 11;
+            this.lbOther.AutoSize = true;
+            this.lbOther.Location = new System.Drawing.Point(15, 248);
+            this.lbOther.Name = "lbOther";
+            this.lbOther.Size = new System.Drawing.Size(121, 25);
+            this.lbOther.TabIndex = 6;
+            this.lbOther.Text = "Sonstiges";
             // 
-            // tbNr2
+            // rtbOther
             // 
-            this.tbNr2.Location = new System.Drawing.Point(386, 133);
-            this.tbNr2.Name = "tbNr2";
-            this.tbNr2.Size = new System.Drawing.Size(211, 32);
-            this.tbNr2.TabIndex = 10;
-            // 
-            // tbNr3
-            // 
-            this.tbNr3.Location = new System.Drawing.Point(386, 203);
-            this.tbNr3.Name = "tbNr3";
-            this.tbNr3.Size = new System.Drawing.Size(211, 32);
-            this.tbNr3.TabIndex = 9;
-            // 
-            // tbNr1
-            // 
-            this.tbNr1.Location = new System.Drawing.Point(386, 63);
-            this.tbNr1.Name = "tbNr1";
-            this.tbNr1.Size = new System.Drawing.Size(211, 32);
-            this.tbNr1.TabIndex = 8;
-            // 
-            // lbSlash
-            // 
-            this.lbSlash.AutoSize = true;
-            this.lbSlash.Location = new System.Drawing.Point(300, 69);
-            this.lbSlash.Name = "lbSlash";
-            this.lbSlash.Size = new System.Drawing.Size(26, 25);
-            this.lbSlash.TabIndex = 12;
-            this.lbSlash.Text = "/";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(300, 143);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 25);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "/";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(314, 206);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 25);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "/";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(325, 280);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 25);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "/";
-            // 
-            // combobNr1
-            // 
-            this.combobNr1.FormattingEnabled = true;
-            this.combobNr1.Items.AddRange(new object[] {
-            "Handy",
-            "Privat",
-            "Geschäftlich"});
-            this.combobNr1.Location = new System.Drawing.Point(667, 69);
-            this.combobNr1.Name = "combobNr1";
-            this.combobNr1.Size = new System.Drawing.Size(121, 33);
-            this.combobNr1.TabIndex = 16;
-            // 
-            // combobNr2
-            // 
-            this.combobNr2.FormattingEnabled = true;
-            this.combobNr2.Items.AddRange(new object[] {
-            "Handy",
-            "Privat",
-            "Geschäftlich"});
-            this.combobNr2.Location = new System.Drawing.Point(667, 132);
-            this.combobNr2.Name = "combobNr2";
-            this.combobNr2.Size = new System.Drawing.Size(121, 33);
-            this.combobNr2.TabIndex = 17;
-            // 
-            // combobNr3
-            // 
-            this.combobNr3.FormattingEnabled = true;
-            this.combobNr3.Items.AddRange(new object[] {
-            "Handy",
-            "Privat",
-            "Geschäftlich"});
-            this.combobNr3.Location = new System.Drawing.Point(667, 205);
-            this.combobNr3.Name = "combobNr3";
-            this.combobNr3.Size = new System.Drawing.Size(121, 33);
-            this.combobNr3.TabIndex = 18;
-            // 
-            // combobNr4
-            // 
-            this.combobNr4.FormattingEnabled = true;
-            this.combobNr4.Items.AddRange(new object[] {
-            "Handy",
-            "Privat",
-            "Geschäftlich"});
-            this.combobNr4.Location = new System.Drawing.Point(667, 268);
-            this.combobNr4.Name = "combobNr4";
-            this.combobNr4.Size = new System.Drawing.Size(121, 33);
-            this.combobNr4.TabIndex = 19;
-            // 
-            // maskBCC1
-            // 
-            this.maskBCC1.Location = new System.Drawing.Point(103, 66);
-            this.maskBCC1.Mask = "+00";
-            this.maskBCC1.Name = "maskBCC1";
-            this.maskBCC1.Size = new System.Drawing.Size(56, 32);
-            this.maskBCC1.TabIndex = 20;
-            this.maskBCC1.Text = "49";
-            // 
-            // maskBCC2
-            // 
-            this.maskBCC2.Location = new System.Drawing.Point(103, 129);
-            this.maskBCC2.Mask = "+00";
-            this.maskBCC2.Name = "maskBCC2";
-            this.maskBCC2.Size = new System.Drawing.Size(56, 32);
-            this.maskBCC2.TabIndex = 21;
-            this.maskBCC2.Text = "49";
-            // 
-            // maskBCC3
-            // 
-            this.maskBCC3.Location = new System.Drawing.Point(103, 206);
-            this.maskBCC3.Mask = "+00";
-            this.maskBCC3.Name = "maskBCC3";
-            this.maskBCC3.Size = new System.Drawing.Size(56, 32);
-            this.maskBCC3.TabIndex = 22;
-            this.maskBCC3.Text = "49";
-            this.maskBCC3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
-            // 
-            // maskBCC4
-            // 
-            this.maskBCC4.Location = new System.Drawing.Point(103, 276);
-            this.maskBCC4.Mask = "+00";
-            this.maskBCC4.Name = "maskBCC4";
-            this.maskBCC4.Size = new System.Drawing.Size(56, 32);
-            this.maskBCC4.TabIndex = 23;
-            this.maskBCC4.Text = "49";
-            // 
-            // lbStreet
-            // 
-            this.lbStreet.AutoSize = true;
-            this.lbStreet.Location = new System.Drawing.Point(20, 66);
-            this.lbStreet.Name = "lbStreet";
-            this.lbStreet.Size = new System.Drawing.Size(85, 25);
-            this.lbStreet.TabIndex = 0;
-            this.lbStreet.Text = "Straße";
-            // 
-            // lbZip
-            // 
-            this.lbZip.AutoSize = true;
-            this.lbZip.Location = new System.Drawing.Point(20, 116);
-            this.lbZip.Name = "lbZip";
-            this.lbZip.Size = new System.Drawing.Size(54, 25);
-            this.lbZip.TabIndex = 1;
-            this.lbZip.Text = "PLZ";
-            // 
-            // lbCountry
-            // 
-            this.lbCountry.AutoSize = true;
-            this.lbCountry.Location = new System.Drawing.Point(20, 166);
-            this.lbCountry.Name = "lbCountry";
-            this.lbCountry.Size = new System.Drawing.Size(66, 25);
-            this.lbCountry.TabIndex = 2;
-            this.lbCountry.Text = "Land";
-            // 
-            // lbTown
-            // 
-            this.lbTown.AutoSize = true;
-            this.lbTown.Location = new System.Drawing.Point(360, 116);
-            this.lbTown.Name = "lbTown";
-            this.lbTown.Size = new System.Drawing.Size(71, 25);
-            this.lbTown.TabIndex = 3;
-            this.lbTown.Text = "Stadt";
-            // 
-            // lbHNr
-            // 
-            this.lbHNr.AutoSize = true;
-            this.lbHNr.Location = new System.Drawing.Point(370, 66);
-            this.lbHNr.Name = "lbHNr";
-            this.lbHNr.Size = new System.Drawing.Size(39, 25);
-            this.lbHNr.TabIndex = 4;
-            this.lbHNr.Text = "Nr";
-            // 
-            // tbStreet
-            // 
-            this.tbStreet.Location = new System.Drawing.Point(123, 66);
-            this.tbStreet.Name = "tbStreet";
-            this.tbStreet.Size = new System.Drawing.Size(212, 32);
-            this.tbStreet.TabIndex = 5;
-            // 
-            // tbZIP
-            // 
-            this.tbZIP.Location = new System.Drawing.Point(123, 116);
-            this.tbZIP.Name = "tbZIP";
-            this.tbZIP.Size = new System.Drawing.Size(212, 32);
-            this.tbZIP.TabIndex = 6;
-            // 
-            // tbCountry
-            // 
-            this.tbCountry.Location = new System.Drawing.Point(123, 166);
-            this.tbCountry.Name = "tbCountry";
-            this.tbCountry.Size = new System.Drawing.Size(212, 32);
-            this.tbCountry.TabIndex = 7;
-            // 
-            // tbHNr
-            // 
-            this.tbHNr.Location = new System.Drawing.Point(459, 63);
-            this.tbHNr.Name = "tbHNr";
-            this.tbHNr.Size = new System.Drawing.Size(212, 32);
-            this.tbHNr.TabIndex = 8;
-            this.tbHNr.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // tbTown
-            // 
-            this.tbTown.Location = new System.Drawing.Point(459, 116);
-            this.tbTown.Name = "tbTown";
-            this.tbTown.Size = new System.Drawing.Size(212, 32);
-            this.tbTown.TabIndex = 9;
+            this.rtbOther.Location = new System.Drawing.Point(20, 287);
+            this.rtbOther.Name = "rtbOther";
+            this.rtbOther.Size = new System.Drawing.Size(808, 252);
+            this.rtbOther.TabIndex = 5;
+            this.rtbOther.Text = "";
             // 
             // groubBMail
             // 
@@ -742,37 +788,17 @@
             this.groubBMail.TabStop = false;
             this.groubBMail.Text = "E-Mail";
             // 
-            // lbMail1
+            // comboBMail2
             // 
-            this.lbMail1.AutoSize = true;
-            this.lbMail1.Location = new System.Drawing.Point(20, 40);
-            this.lbMail1.Name = "lbMail1";
-            this.lbMail1.Size = new System.Drawing.Size(43, 25);
-            this.lbMail1.TabIndex = 0;
-            this.lbMail1.Text = "#1";
-            // 
-            // lbMail2
-            // 
-            this.lbMail2.AutoSize = true;
-            this.lbMail2.Location = new System.Drawing.Point(20, 95);
-            this.lbMail2.Name = "lbMail2";
-            this.lbMail2.Size = new System.Drawing.Size(43, 25);
-            this.lbMail2.TabIndex = 1;
-            this.lbMail2.Text = "#2";
-            // 
-            // tbMail1
-            // 
-            this.tbMail1.Location = new System.Drawing.Point(164, 33);
-            this.tbMail1.Name = "tbMail1";
-            this.tbMail1.Size = new System.Drawing.Size(425, 32);
-            this.tbMail1.TabIndex = 1;
-            // 
-            // tbMail2
-            // 
-            this.tbMail2.Location = new System.Drawing.Point(164, 88);
-            this.tbMail2.Name = "tbMail2";
-            this.tbMail2.Size = new System.Drawing.Size(425, 32);
-            this.tbMail2.TabIndex = 2;
+            this.comboBMail2.FormattingEnabled = true;
+            this.comboBMail2.Items.AddRange(new object[] {
+            "Privat",
+            "Geschäftlich",
+            "Spam"});
+            this.comboBMail2.Location = new System.Drawing.Point(635, 95);
+            this.comboBMail2.Name = "comboBMail2";
+            this.comboBMail2.Size = new System.Drawing.Size(121, 33);
+            this.comboBMail2.TabIndex = 4;
             // 
             // comboBMail1
             // 
@@ -786,35 +812,46 @@
             this.comboBMail1.Size = new System.Drawing.Size(121, 33);
             this.comboBMail1.TabIndex = 3;
             // 
-            // comboBMail2
+            // tbMail2
             // 
-            this.comboBMail2.FormattingEnabled = true;
-            this.comboBMail2.Items.AddRange(new object[] {
-            "Privat",
-            "Geschäftlich",
-            "Spam"});
-            this.comboBMail2.Location = new System.Drawing.Point(635, 95);
-            this.comboBMail2.Name = "comboBMail2";
-            this.comboBMail2.Size = new System.Drawing.Size(121, 33);
-            this.comboBMail2.TabIndex = 4;
+            this.tbMail2.Location = new System.Drawing.Point(164, 88);
+            this.tbMail2.Name = "tbMail2";
+            this.tbMail2.Size = new System.Drawing.Size(425, 32);
+            this.tbMail2.TabIndex = 2;
             // 
-            // rtbOther
+            // tbMail1
             // 
-            this.rtbOther.Location = new System.Drawing.Point(20, 287);
-            this.rtbOther.Name = "rtbOther";
-            this.rtbOther.Size = new System.Drawing.Size(808, 252);
-            this.rtbOther.TabIndex = 5;
-            this.rtbOther.Text = "";
+            this.tbMail1.Location = new System.Drawing.Point(164, 33);
+            this.tbMail1.Name = "tbMail1";
+            this.tbMail1.Size = new System.Drawing.Size(425, 32);
+            this.tbMail1.TabIndex = 1;
             // 
-            // lbOther
+            // lbMail2
             // 
-            this.lbOther.AutoSize = true;
-            this.lbOther.Location = new System.Drawing.Point(15, 248);
-            this.lbOther.Name = "lbOther";
-            this.lbOther.Size = new System.Drawing.Size(121, 25);
-            this.lbOther.TabIndex = 6;
-            this.lbOther.Text = "Sonstiges";
-            this.lbOther.Click += new System.EventHandler(this.label6_Click);
+            this.lbMail2.AutoSize = true;
+            this.lbMail2.Location = new System.Drawing.Point(20, 95);
+            this.lbMail2.Name = "lbMail2";
+            this.lbMail2.Size = new System.Drawing.Size(43, 25);
+            this.lbMail2.TabIndex = 1;
+            this.lbMail2.Text = "#2";
+            // 
+            // lbMail1
+            // 
+            this.lbMail1.AutoSize = true;
+            this.lbMail1.Location = new System.Drawing.Point(20, 40);
+            this.lbMail1.Name = "lbMail1";
+            this.lbMail1.Size = new System.Drawing.Size(43, 25);
+            this.lbMail1.TabIndex = 0;
+            this.lbMail1.Text = "#1";
+            // 
+            // lbChoice
+            // 
+            this.lbChoice.AutoSize = true;
+            this.lbChoice.Location = new System.Drawing.Point(604, 27);
+            this.lbChoice.Name = "lbChoice";
+            this.lbChoice.Size = new System.Drawing.Size(96, 25);
+            this.lbChoice.TabIndex = 1;
+            this.lbChoice.Text = "Wählen";
             // 
             // frmMain
             // 
@@ -822,6 +859,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(875, 672);
+            this.Controls.Add(this.lbChoice);
             this.Controls.Add(this.tabContactInfo);
             this.Controls.Add(this.btSave);
             this.Controls.Add(this.btPreview);
@@ -835,10 +873,10 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Telefonbuch";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabContactInfo.ResumeLayout(false);
             this.tabGeneral.ResumeLayout(false);
             this.tabGeneral.PerformLayout();
+            this.groupBBirthday.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbContact)).EndInit();
             this.gbShowAs.ResumeLayout(false);
             this.gbShowAs.PerformLayout();
@@ -853,6 +891,7 @@
             this.groubBMail.ResumeLayout(false);
             this.groubBMail.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -882,7 +921,7 @@
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.GroupBox gbShowAs;
         private System.Windows.Forms.ComboBox combobShowAs;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbExample;
         private System.Windows.Forms.PictureBox picbContact;
         private System.Windows.Forms.Button btPic;
         private System.Windows.Forms.Label lbPic;
@@ -929,6 +968,9 @@
         private System.Windows.Forms.Label lbMail1;
         private System.Windows.Forms.Label lbOther;
         private System.Windows.Forms.RichTextBox rtbOther;
+        private System.Windows.Forms.GroupBox groupBBirthday;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label lbChoice;
 
     }
 }

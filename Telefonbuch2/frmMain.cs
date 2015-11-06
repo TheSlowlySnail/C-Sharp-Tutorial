@@ -19,24 +19,44 @@ namespace Telefonbuch2
             InitializeComponent();
         }
 
-        private void maskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        
+        //Button New
+        private void btNew_Click(object sender, EventArgs e)
         {
-
+            this.tabContactInfo.Visible = true;
+            this.btPreview.Visible = true;
+            this.btSave.Visible = true;
+            this.lbChoice.Visible = false;
         }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        //ComboBox ShowAs  --> Auswahl geändert
+        private void combobShowAs_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            switch (this.combobShowAs.SelectedIndex)
+            {
+                case 0:
+                    this.lbExample.Text = "Beispiel " + this.tbName.Text + ", " + this.tbVname.Text;
+                    break;
+                case 1:
+                    this.lbExample.Text = "Beispiel " + this.tbVname.Text + " " + this.tbName.Text;
+                    break;
+                case 2:
+                    this.lbExample.Text = "Beispiel " + this.tbName.Text + ", " + this.tbVname.Text + " " + this.tbNickname.Text;
+                    break;
+                case 3:
+                    this.lbExample.Text = "Beispiel "+this.tbTitle.Text+ " " + this.tbName.Text + ", " + this.tbVname.Text + " " + this.tbNickname.Text;
+                    break;
+                default:
+                    break;
+            }
         }
-
-        private void label6_Click(object sender, EventArgs e)
+        //Load Picture
+        private void btPic_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-
+            OpenFileDialog of = new OpenFileDialog();
+            of.Title = "Bitte Bild auswählen";
+            of.Multiselect = false;
+            of.Filter = "Bilder|*.png;*.jpg|PNG-Bilder|*.png|JPG-Bilder|*.jpg";
+            of.ShowDialog();
         }
 
 
